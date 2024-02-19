@@ -3,7 +3,7 @@ import { MdMyLocation } from "react-icons/md";
 
 function Header() {
   return (
-    <nav className="flex justify-between items-center h-[8rem] border border-red-700 z-50 w-[960px] p-4">
+    <nav className="flex justify-between items-center h-[8rem] z-50 w-[960px] p-4">
       <p className="shrink text-[2.2rem] capitalize text-[#2F5D8A]">
         <a href="#" className="font-bold capitalize">
           Weather App

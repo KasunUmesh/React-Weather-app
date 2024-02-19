@@ -1,4 +1,5 @@
 import CurrentWeather from "../components/CurrentWeather/CurrentWeather"
+import Forecast from "../components/Forecast/Forecast"
 import Header from "../components/Header/Header"
 
 import Search from "../components/Search/Search"
@@ -11,6 +12,7 @@ function Home() {
         <Header/>
         <Search/>
         <CurrentWeather/>
+        <Forecast/>
     </div>
   )
 }
