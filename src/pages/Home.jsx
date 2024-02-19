@@ -1,3 +1,4 @@
+import CurrentWeather from "../components/CurrentWeather/CurrentWeather"
 import Header from "../components/Header/Header"
 
 import Search from "../components/Search/Search"
@@ -9,6 +10,7 @@ function Home() {
         <img src="src/assets/bg.svg" alt="backgroundImage" className="absolute object-cover h-screen mix-blend-overlay opacity-80"/>
         <Header/>
         <Search/>
+        <CurrentWeather/>
     </div>
   )
 }
