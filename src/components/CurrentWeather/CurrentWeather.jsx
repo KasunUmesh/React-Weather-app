@@ -5,7 +5,7 @@ import { TiWeatherSnow } from "react-icons/ti";
 
 function CurrentWeather() {
   return (
-    <div className="bg-[#FFFFFF] shadow rounded-md p-2 flex flex-col w-[960px] m-3 z-50 ">
+    <div className="bg-[#FFFFFF] shadow rounded-md p-2 flex flex-col w-[960px] m-3 z-50">
         <div className="flex justify-between">
             <p className="font-medium text-[1.125rem] text-[#727E8E]">Current Weather</p>
             <div>
@@ -13,7 +13,7 @@ function CurrentWeather() {
             </div>
         </div>
         <div className="flex flex-wrap">
-            <div className="flex flex-col m-3 w-[25rem]">
+            <div className="flex flex-col m-10 w-[25rem]">
                 <p className="font-semibold text-[1.25rem] text-[#396bae] mb-2">Colombo</p>
                 <div className="flex">
                     <img src="src/assets/weather/sunny.svg" alt="" className="w-[100px] h-[100px]"/>
