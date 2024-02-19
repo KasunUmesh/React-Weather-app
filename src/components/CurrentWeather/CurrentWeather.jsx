@@ -1,8 +1,11 @@
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
+import { FaLongArrowAltUp, FaLongArrowAltDown  } from "react-icons/fa";
+import { WiHumidity, WiCloudyWindy  } from "react-icons/wi";
+import { TiWeatherSnow } from "react-icons/ti";
 
 function CurrentWeather() {
   return (
-    <div className="bg-[#FFFFFF] shadow rounded-md p-2 flex flex-col w-[960px] m-3 z-50">
+    <div className="bg-[#FFFFFF] shadow rounded-md p-2 flex flex-col w-[960px] m-3 z-50 ">
         <div className="flex justify-between">
             <p className="font-medium text-[1.125rem] text-[#727E8E]">Current Weather</p>
             <div>
@@ -27,8 +30,41 @@ function CurrentWeather() {
                     Feels like 81
                     <sup>&deg;</sup>
                 </p>
-                <div className="flex">
-                    <div></div>
+                <div className="flex mb-8 w-8">
+                    <div className="flex items-center font-medium text-[1.25rem] text-[#3a86ca] mt-[0.8rem] mr-[2.5rem]">
+                        <FaLongArrowAltUp color="#153C5E" className="mr-4"/>
+                        <p className="text-[1.25rem] text-[#4a6fa1]">
+                            81
+                            <sup>&deg;</sup>
+                        </p>
+                        
+                    </div>
+                    <div className="flex items-center font-medium text-[1.25rem] text-[#3a86ca] mt-[0.8rem] mr-[2.5rem]">
+                        <FaLongArrowAltDown color="#153C5E" className="mr-4"/>
+                        <p className="text-[1.25rem] text-[#4a6fa1]">
+                            81
+                            <sup>&deg;</sup>
+                        </p>
+                        
+                    </div>
+                </div>
+                <div className="flex items-center justify-start mb-[0.8rem]">
+                    <div className="flex text-[#7B98B2] items-center text-[1.25rem] w-32">
+                       <WiHumidity className="mr-4 w-[1.6rem] ml-[-0.3rem]" /> Humidity
+                    </div>
+                    <span className="text-[#3080c8] font-medium text-[1.25rem]">87%</span>
+                </div>
+                <div className="flex items-center justify-start mb-[0.8rem]">
+                    <div className="flex text-[#7B98B2] items-center text-[1.25rem] w-32">
+                       <WiCloudyWindy className="mr-4 w-[1.6rem] ml-[-0.3rem]" /> Wind
+                    </div>
+                    <span className="text-[#3080c8] font-medium text-[1.25rem]">11kph</span>
+                </div>
+                <div className="flex items-center justify-start mb-[0.8rem]">
+                    <div className="flex text-[#7B98B2] items-center text-[1.25rem] w-32">
+                       <TiWeatherSnow className="mr-4 w-[1.6rem] ml-[-0.3rem]" /> Pressure
+                    </div>
+                    <span className="text-[#3080c8] font-medium text-[1.25rem]">1010hpa</span>
                 </div>
             </div>
         </div>
