@@ -1,11 +1,12 @@
+/* eslint-disable react/prop-types */
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import { FaLongArrowAltUp, FaLongArrowAltDown  } from "react-icons/fa";
 import { WiHumidity, WiCloudyWindy  } from "react-icons/wi";
 import { TiWeatherSnow } from "react-icons/ti";
 
-function CurrentWeather() {
+function CurrentWeather({data}) {
   return (
-    <div className="bg-[#FFFFFF] shadow rounded-md p-2 flex flex-col w-[960px] m-3 z-50">
+    <div className="bg-[#FFFFFF] shadow rounded-md p-2 flex flex-col w-[960px] m-3 z-30">
         <div className="flex justify-between">
             <p className="font-medium text-[1.125rem] text-[#727E8E]">Current Weather</p>
             <div>
@@ -14,11 +15,11 @@ function CurrentWeather() {
         </div>
         <div className="flex flex-wrap">
             <div className="flex flex-col m-10 w-[25rem]">
-                <p className="font-semibold text-[1.25rem] text-[#396bae] mb-2">Colombo</p>
+                <p className="font-semibold text-[1.25rem] text-[#396bae] mb-2">{data.name}</p>
                 <div className="flex">
                     <img src="src/assets/weather/sunny.svg" alt="" className="w-[100px] h-[100px]"/>
                     <span className="font-extralight text-[7rem] text-[#4a6fa1] ml-5 leading-none">
-                        81
+                        {data === null ? <p>error</p> : <p>work</p>}
                         <sub className="bottom-8 text-[6rem]">&deg;</sub>
                     </span>
                 </div>
