@@ -1,3 +1,4 @@
+import { useState } from "react"
 import CurrentWeather from "../components/CurrentWeather/CurrentWeather"
 import Forecast from "../components/Forecast/Forecast"
 import Header from "../components/Header/Header"
@@ -6,14 +7,18 @@ import Search from "../components/Search/Search"
 
 function Home() {
 
+    const [location, setLocation] = useState()
+    console.log(location);
+
   return (
     <div className="flex relative justify-center  bg-gradient-to-b from-gray-50 to-cyan-300 flex-wrap h-[100%] md:h-screen">
         <img src="src/assets/bg.svg" alt="backgroundImage" className="absolute h-screen object-cover mix-blend-overlay opacity-80"/>
         <Header/>
-        <Search/>
+        <Search location={location} setLocation={setLocation}/>
         <CurrentWeather/>
         <Forecast/>
     </div>
+   
   )
 }
 
