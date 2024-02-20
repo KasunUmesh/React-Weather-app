@@ -1,6 +1,6 @@
 const GEO_API_URL = 'https://wft-geo-db.p.rapidapi.com/v1/geo';
 
-export const WEATHER_API_URL = "https://api.openweathermap.org/data/2.5/";
+export const WEATHER_API_URL = 'https://api.openweathermap.org/data/2.5';
 export const WEATHER_API_KEY = "a14c82aae37aefd5a1fa154676b48d84";
 
 const GEO_API_OPTIONS = {
@@ -10,6 +10,8 @@ const GEO_API_OPTIONS = {
 		'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com'
 	}
 };
+
+
 
 export async function fetchCities(input) {
     try {

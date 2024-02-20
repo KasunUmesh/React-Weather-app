@@ -15,12 +15,12 @@ function CurrentWeather({data}) {
         </div>
         <div className="flex flex-wrap">
             <div className="flex flex-col m-10 w-[25rem]">
-                <p className="font-semibold text-[1.25rem] text-[#396bae] mb-2">{data.name}</p>
+                <p className="font-semibold text-[1.25rem] text-[#396bae] mb-2">{data === null ? <p>Colombo</p> : data.name}</p>
                 <div className="flex">
                     <img src="src/assets/weather/sunny.svg" alt="" className="w-[100px] h-[100px]"/>
-                    <span className="font-extralight text-[7rem] text-[#4a6fa1] ml-5 leading-none">
-                        {data === null ? <p>error</p> : <p>work</p>}
-                        <sub className="bottom-8 text-[6rem]">&deg;</sub>
+                    <span className="font-extralight text-[7rem] flex text-[#4a6fa1] ml-5 leading-none">
+                        {data === null ? <p>10</p> : data.main.temp}
+                        <sub className=" text-[6rem]">&deg;</sub>
                     </span>
                 </div>
                 <p className="text-[1.375rem] text-left text-[#7b98b2] font-medium">few clouds</p>
