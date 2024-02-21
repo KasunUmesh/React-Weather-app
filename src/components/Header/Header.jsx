@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { MdMyLocation } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function Header() {
 
@@ -32,8 +33,8 @@ function Header() {
             open && (
             <div className="bg-white p-4 w-48 shadow-lg absolute right-1 top-12">
               <ul >
-                <li onClick={() => setOpen(false)} className="p-2 text-lg cursor-pointer rounded hover:bg-blue-100" >Home</li>
-                <li onClick={() => setOpen(false)} className="p-2 text-lg cursor-pointer rounded hover:bg-blue-100" >More Details</li>
+                <li onClick={() => setOpen(false)} className="p-2 text-lg cursor-pointer rounded hover:bg-blue-100" ><Link to={'/'}>Home</Link></li>
+                <li onClick={() => setOpen(false)} className="p-2 text-lg cursor-pointer rounded hover:bg-blue-100" ><Link to={'/more-details'}>More Details</Link></li>
               </ul>
             </div>
           )}
