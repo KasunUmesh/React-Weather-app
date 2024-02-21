@@ -13,6 +13,7 @@ function Home() {
     const [currentWeather, setCurrentWeather] = useState(null);
     const [forecast, setForecast] = useState(null);
 
+    console.log(forecast);
     
 
     const searchChangeHandler = (searchData) => {
