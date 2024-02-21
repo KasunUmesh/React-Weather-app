@@ -13,7 +13,7 @@ function Home() {
     const [currentWeather, setCurrentWeather] = useState(null);
     const [forecast, setForecast] = useState(null);
 
-    console.log(currentWeather);
+    
 
     const searchChangeHandler = (searchData) => {
         const [lat, lon] = searchData.value.split(" ");
@@ -43,7 +43,7 @@ function Home() {
         <Header/>
         <Search onSearchChange={searchChangeHandler} />
         <CurrentWeather data={currentWeather}/>
-        <Forecast/>
+        <Forecast item={forecast}/>
     </div>
    
   )
