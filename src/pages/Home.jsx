@@ -44,7 +44,7 @@ function Home() {
         <Header/>
         <Search onSearchChange={searchChangeHandler} />
         <CurrentWeather data={currentWeather}/>
-        <Forecast item={forecast}/>
+        <Forecast item={forecast} title="Daily Forecast"/>
     </div>
    
   )

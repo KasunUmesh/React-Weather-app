@@ -4,6 +4,7 @@ import Forecast from "../components/Forecast/Forecast"
 import Header from "../components/Header/Header"
 import Search from "../components/Search/Search"
 import { WEATHER_API_KEY, WEATHER_API_URL } from "../API/api"
+import WeatherChart from "../components/WeatherChart/WeatherChart"
 
 function MoreDetails() {
 
@@ -35,12 +36,13 @@ function MoreDetails() {
     }
 
   return (
-    <div className="flex relative justify-center  bg-gradient-to-b from-gray-50 to-cyan-300 flex-wrap h-[100%] md:h-screen">
+    <div className="flex relative justify-center  bg-gradient-to-b from-gray-50 to-cyan-300 flex-wrap h-[100%] md:h-[100%]">
         <img src="src/assets/bg.svg" alt="backgroundImage" className="absolute h-screen object-cover mix-blend-overlay opacity-80"/>
         <Header/>
         <Search onSearchChange={searchChangeHandler}/>
-        <Forecast item={forecast}/>
-        <Forecast item={forecast}/>
+        <Forecast item={forecast} title="Hourly Forecast"/>
+        <Forecast item={forecast} title="Daily Forecast"/>
+        <WeatherChart/>
     </div>
   )
 }
