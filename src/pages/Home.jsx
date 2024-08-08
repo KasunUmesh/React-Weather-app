@@ -44,7 +44,7 @@ function Home() {
         <img src={assets.bg} alt="backgroundImage" className="absolute h-screen object-cover mix-blend-overlay opacity-80"/>
         <Header/>
         <Search onSearchChange={searchChangeHandler} />
-        <CurrentWeather data={currentWeather}/>
+        <CurrentWeather data={currentWeather} />
         <Forecast item={forecast} title="Daily Forecast"/>
     </div>
    

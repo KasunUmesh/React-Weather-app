@@ -3,6 +3,7 @@ import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import { FaLongArrowAltUp, FaLongArrowAltDown  } from "react-icons/fa";
 import { WiHumidity, WiCloudyWindy  } from "react-icons/wi";
 import { TiWeatherSnow } from "react-icons/ti";
+import assets from "../../assets";
 
 
 
@@ -19,7 +20,7 @@ function CurrentWeather({data}) {
             <div className="flex flex-col m-10 w-[23rem] bg-slate-200 p-3 rounded-md shadow-md">
                 <p className="font-semibold text-[1.25rem] text-[#396bae] mb-2">{data === null ? <p>Colombo</p> : data.name}</p>
                 <div className="flex">
-                    <img src={data === null ? `src/assets/icons/01d.png` : `src/assets/icons/${data.weather[0].icon}.png`} alt="weather" className="w-[100px] h-[100px]"/>
+                    <img src={data === null ? `${assets.d}` : `src/assets/icons/${data.weather[0].icon}.png`} alt="weather" className="w-[100px] h-[100px]"/>
                     
                     <span className="font-extralight text-[7rem] flex text-[#4a6fa1] ml-5 leading-none">
                         {data === null ? <p>10</p> : Math.round(data.main.temp)}
