@@ -40,7 +40,7 @@ function Home() {
 
   return (
     <div className="flex relative justify-center  bg-gradient-to-b from-gray-50 to-cyan-300 flex-wrap h-[100%] md:h-screen">
-        <img src="src/assets/bg.svg" alt="backgroundImage" className="absolute h-screen object-cover mix-blend-overlay opacity-80"/>
+        <img src="src/assets/bg.png" alt="backgroundImage" className="absolute h-screen object-cover mix-blend-overlay opacity-80"/>
         <Header/>
         <Search onSearchChange={searchChangeHandler} />
         <CurrentWeather data={currentWeather}/>

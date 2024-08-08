@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <nav className="flex justify-between items-center h-[8rem] z-[60] w-[960px] p-4">
-      <p className="shrink text-[2.2rem] capitalize text-[#2F5D8A]">
+      <p className="shrink text-[1.5rem] capitalize text-[#2F5D8A] md:text-[2.2rem]">
         <a href="#" className="font-bold capitalize">
           Weather App
         </a>

@@ -15,8 +15,8 @@ function CurrentWeather({data}) {
                 <ToggleSwitch/>
             </div>
         </div>
-        <div className="flex flex-wrap">
-            <div className="flex flex-col m-10 w-[23rem]">
+        <div className="flex flex-wrap ">
+            <div className="flex flex-col m-10 w-[23rem] bg-slate-200 p-3 rounded-md shadow-md">
                 <p className="font-semibold text-[1.25rem] text-[#396bae] mb-2">{data === null ? <p>Colombo</p> : data.name}</p>
                 <div className="flex">
                     <img src={data === null ? `src/assets/icons/01d.png` : `src/assets/icons/${data.weather[0].icon}.png`} alt="weather" className="w-[100px] h-[100px]"/>
